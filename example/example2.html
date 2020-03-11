@@ -1,13 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+CTYPE html>
+<html lang="ru">
   <head>
-    <title>example 2</title>
-    <meta charset="ufx-8">
-      </head>
-        <body>
-          example 2
-        </body>
+    <title>Accounting</title>
+    <meta charset="utf-8">
+    <style>
+      table, th, td {
+        border: solid;
+      }
+    </style>
+  </head>
+  <body>
+    Accounting
+    <table>
+      <thead>
+        <tr>
+          <th>Expense Description</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Milk</td>
+          <td>15.00</td>
+        </tr>
+        <tr>
+          <td><strong>Total Expenses</strong></td>
+          <td><strong>15.00</strong></td>
+        </tr>
+     </tbody>
+    </table>
+  </body>
   <script>
-  // put your Js here
+     const MAX_EXPENSES = 150;
+     let currentExpenses = 0;
+
+     function addExpense(description, amount) {
+       if (amount < 0) {
+         return false;
+       } else {
+
+       }
+
+       if (currentExpenses + amount <= MAX_EXPENSES) {
+         currentExpenses += amount;
+         return true;
+       } else {
+         return false;
+       }
+     }
+
+     console.log('currentExpenses', currentExpenses);
+     console.log('add Milk',
+                 addExpense('Milk', 1.00));
+     console.log('add Playstation 4',
+                 addExpense('Playstation 4', 399));
+     console.log('add Videogame',
+                 addExpense('Videogame', 69.99));
+     console.log('try to hack',
+                 addExpense('Hacker', -45.26));
+     console.log('currentExpenses', currentExpenses);
   </script>
 </html>
