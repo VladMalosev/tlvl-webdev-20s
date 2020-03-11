@@ -1,4 +1,4 @@
-CTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Accounting</title>
@@ -6,18 +6,18 @@ CTYPE html>
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    Accounting
+    <h1>Accounting</h1>
     <table>
       <thead>
         <tr>
           <th>Expense Description</th>
-          <th>Amount</th>
+          <th>Price</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Milk</td>
-          <td>15.00</td>
+          <td>1.00</td>
         </tr>
         <tr>
           <td><strong>Total Expenses</strong></td>
@@ -25,7 +25,14 @@ CTYPE html>
         </tr>
      </tbody>
     </table>
+    <div>
+      <input type="text" placeholder="Expense Description">
+      <input type="number" placeholder="Price">
+      <button>
+        Add
+      </button>
+    </div>
   </body>
   <script src="accounting.js"></script>
-  <script src="test.js"</script>
+  <script src="test.js"></script>
 </html>
